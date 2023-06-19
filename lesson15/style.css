@@ -1,0 +1,11 @@
+p.text--bold {
+    font-weight: bold;
+}
+
+.parent>.child {
+    color: blueviolet;
+}
+
+a[href="https://webdesign.tutsplus.com/ru/tutorials/the-30-css-selectors-you-must-memorize--net-16048"] {
+    color: green;
+}
