@@ -1,0 +1,21 @@
+.block {
+    width: 100px;
+    height: 100px;
+    margin: 150px auto;
+    border: 5px solid #000;
+}
+
+.block__unuvers:hover {
+    cursor: pointer;
+    border-color: aqua;
+    transition: border-color 3s ease 2s;
+}
+
+.block__aparat:hover {
+    cursor: pointer;
+    border-color: rgb(174, 0, 255);
+    transition-property: border-color;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+    transition-delay: 2s;
+}

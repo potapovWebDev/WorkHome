@@ -1,0 +1,52 @@
+.text {
+    /* display: block; */
+    font-size: 2rem;
+    animation: circle-to-square 5s infinite;
+    /* animation-duration: 5s;
+    animation-iteration-count: infinite; */
+}
+
+@keyframes circle-to-square {
+    1% {
+      color: #2e2225;
+    }
+    8% {
+      color: #892db4;
+    }
+    16% {
+      color: #4a8360;
+    }
+    24% {
+      color: #abc420;
+    }
+    32% {
+      color: #633357;
+    }
+    40% {
+      color: #f5013a;
+    }
+    48% {
+      color: #4921b8;
+    }
+    56% {
+      color: #5c1526;
+    }
+    64% {
+      color: #698688;
+    }
+    72% {
+      color: #86122d;
+    }
+    80% {
+      color: #117c7c;
+    }
+    88% {
+      color: #575f4b;
+    }
+    96% {
+      color: #ad6c16;
+    }
+    100% {
+      color: #505e56;
+    }
+  }

@@ -1,0 +1,6 @@
+.text {
+    display: inline-block;
+    padding: 25px 25px 0;
+    height: 100px;
+    overflow: auto;
+}

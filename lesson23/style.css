@@ -1,0 +1,33 @@
+.block {
+    border: 1px solid dark;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    width: 900px;
+    height: 500px;
+    margin: 20px auto;
+}
+
+.block__unuvers {
+    background: url('spman.jpg') center/100px no-repeat, linear-gradient(90deg, rgba(7,0,115,1) 0%, rgba(255,0,0,1) 100%);
+}
+
+
+.block__aparat {
+    position: relative;
+    background-image: radial-gradient(circle, rgba(2,1,14,1) 51%, rgba(254,255,0,1) 100%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.block__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image:url(rom.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+}
