@@ -1,0 +1,9 @@
+.grid {
+    display: grid;
+    grid-template: auto auto/repeat(2, 1fr) minmax(100px, 200px) repeat(2, 1fr);
+}
+
+.grid__item {
+    border: 1px solid #000;
+    background-color: azure;
+}

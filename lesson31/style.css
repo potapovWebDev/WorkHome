@@ -1,0 +1,33 @@
+.title {
+    font-size: 2rem;
+    margin: 50px 100px;
+    position: relative;
+    display: inline-block;
+}
+
+.title::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -20px;
+
+}
+.title::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: blue;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -20px;
+
+}
