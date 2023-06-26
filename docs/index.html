@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
     <link rel="stylesheet" href="style.css">
 
 
@@ -13,59 +14,192 @@
 </head>
 <body>
     <div class="wrapper">
-        <section class="promo">
-            <div class="header">
+        <div class="header">
+            <div class="container">
+                <div class="header__wrapp">
+                    <a href="#" class="logo logo_r"><img src="icons/header/Logo.svg" alt="Logo"></a>
+                    <nav class="header__nav">
+                        <ul class="header__nav-menu">
+                            <li class="header__nav-item"><a href="#">Home</a></li>
+                            <li class="header__nav-item"><a href="#">About us</a></li>
+                            <li class="header__nav-item"><a href="#">Services</a></li>
+                            <li class="header__nav-item"><a href="#">Services</a></li>
+                            <li class="header__nav-item"><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__contacts">
+                        <img src="icons/header/Assistance Icon.svg" class="header__contacts-img"></img>
+                        <div class="header__contacts-desc">Road Assistance</div>
+                        <a href="tel:18002652452" class="header__contacts-tel">1800 265 24 52</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="main">
+            <section class="promo">
+                <div class="promo__body">
+                    <div class="container">
+                        <div class="promo__body-wrapp">
+                            <div class="promo__content">
+                                <h1 class="title promo__title">Get your vehicle service done online at one place</h1>
+                                <div class="promo__buttons">
+                                    <a href="#" class="main-btn promo__btn">Book a service</a>
+                                    <a href="https://www.youtube.com/watch?v=bD_nlDO09f4" data-fancybox class="promo__video">Play Video</a>
+                                </div>
+                                <div class="promo__timetable">
+                                    <img src="icons/header/promo_ic.svg" alt="icon video" class="promo__timetable_icon">
+                                    <div class="promo__timetable_desc">We are open</div>
+                                    <div class="promo__timetable_text">Monday to Friday 9:00 AM to  10:00  AM</div>
+                                </div>
+                            </div>
+                            <div class="promo__images">
+                                <img src="img/header/Image.jpg" alt="image">
+                                <div class="promo__images-elem promo__images-elem_up">
+                                    <div class="promo__images-hr"><span>24</span> hr</div>
+                                    <div class="promo__images-text">Quick service</div>
+                                </div>
+                                <div class="promo__images-elem promo__images-elem_down">
+                                    <div class="promo__images-rat"><span>4.5/5</span>Rating</div>
+                                    <div class="promo__images-star"><div id="rateYo"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="offer">
                 <div class="container">
-                    <div class="header__wrapp">
-                        <a href="#" class="logo logo_r"><img src="icons/header/Logo.svg" alt="Logo"></a>
-                        <nav class="header__nav">
-                            <ul class="header__nav-menu">
-                                <li class="header__nav-item"><a href="#">Home</a></li>
-                                <li class="header__nav-item"><a href="#">About us</a></li>
-                                <li class="header__nav-item"><a href="#">Services</a></li>
-                                <li class="header__nav-item"><a href="#">Services</a></li>
-                                <li class="header__nav-item"><a href="#">Contact</a></li>
+                    <div class="offer__title-desc">What we Offer</div>
+                    <h2 class="offer__title title title__center">We offer full service auto repair & maintenance</h2>
+                    <div class="offer__block">
+                        <div class="offer__block-item">
+                            <div class="offer__block-icons"><img src="icons/Offer/Icon.svg" alt="icon"></div>
+                            <div class="offer__block-desc">Diagnostics</div>
+                        </div>
+                        <div class="offer__block-item">
+                            <div class="offer__block-icons"><img src="icons/Offer/Icon-1.svg" alt="icon"></div>
+                            <div class="offer__block-desc">Engine Repair</div>
+                        </div>
+                        <div class="offer__block-item">
+                            <div class="offer__block-icons"><img src="icons/Offer/Icon-2.svg" alt="icon"></div>
+                            <div class="offer__block-desc">Wheel Repair</div>
+                        </div>
+                        <div class="offer__block-item">
+                            <div class="offer__block-icons"><img src="icons/Offer/Icon-3.svg" alt="icon"></div>
+                            <div class="offer__block-desc">Oil Filter</div>
+                        </div>
+                        <div class="offer__block-item">
+                            <div class="offer__block-icons"><img src="icons/Offer/Icon-4.svg" alt="icon"></div>
+                            <div class="offer__block-desc">Body Work</div>
+                        </div>
+                        <div class="offer__block-item">
+                            <div class="offer__block-icons"><img src="icons/Offer/Icon-5.svg" alt="icon"></div>
+                            <div class="offer__block-desc">Batteries</div>
+                        </div>
+                        <div class="offer__block-item">
+                            <div class="offer__block-icons"><img src="icons/Offer/Icon-6.svg" alt="icon"></div>
+                            <div class="offer__block-desc">Insurance Claim</div>
+                        </div>
+                        <div class="offer__block-item">
+                            <div class="offer__block-icons"><img src="icons/Offer/Icon-7.svg" alt="icon"></div>
+                            <div class="offer__block-desc">Custom Service</div>
+                        </div>
+                    </div>
+                    <a href="#" class="offer__more">
+                        <span>Learn about services</span>
+                        <img src="icons/Offer/arrow.svg" alt="arrow">
+                    </a>
+                </div>
+            </section>
+            <section class="follow">
+                <div class="container">
+                    <div class="follow__wrapp">
+                        <div class="follow__content">
+                            <h2 class="follow__title title">We follow a clear process to help you out.</h2>
+                            <p class="follow__text">Through True Rich Attended does no end it his mother since real had half every him case in packages enquire</p>
+                            <a href="#" class="main-btn follow__btn">Learn more</a>
+                        </div>
+    
+                        <div class="follow__table">
+                            <ul class="follow__menu">
+                                <li class="follow__item">
+                                    <h3 class="follow__item-title follow__item-title_1">Get a Quote</h3>
+                                    <p class="follow__item-text">
+                                        Through True Rich Attended does no end it his mother since real had half every.
+                                    </p>
+                                </li>
+                                <li class="follow__item">
+                                    <h3 class="follow__item-title follow__item-title_2">Book an Appointment</h3>
+                                    <p class="follow__item-text">
+                                        Through True Rich Attended does no end it his mother since real had half every.
+                                    </p>
+                                </li>
+                                <li class="follow__item">
+                                    <h3 class="follow__item-title follow__item-title_3">Get your Service Done</h3>
+                                    <p class="follow__item-text">
+                                        Through True Rich Attended does no end it his mother since real had half every.
+                                    </p>
+                                </li>
                             </ul>
-                        </nav>
-                        <div class="header__contacts">
-                            <img src="icons/header/Assistance Icon.svg" class="header__contacts-img"></img>
-                            <div class="header__contacts-desc">Road Assistance</div>
-                            <a href="tel:18002652452" class="header__contacts-tel">1800 265 24 52</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="promo__body">
+            </section>
+            <section class="get">
                 <div class="container">
-                    <div class="promo__body-wrapp">
-                        <div class="promo__content">
-                            <h1 class="title promo__title">Get your vehicle service done online at one place</h1>
-                            <div class="promo__buttons">
-                                <a href="#" class="main-btn promo__btn">Book a service</a>
-                                <a href="https://www.youtube.com/watch?v=bD_nlDO09f4" data-fancybox class="promo__video">Play Video</a>
-                            </div>
-                            <div class="promo__timetable">
-                                <img src="icons/header/promo_ic.svg" alt="icon video" class="promo__timetable_icon">
-                                <div class="promo__timetable_desc">We are open</div>
-                                <div class="promo__timetable_text">Monday to Friday 9:00 AM to  10:00  AM</div>
-                            </div>
-                        </div>
-                        <div class="promo__images">
-                            <img src="img/header/Image.jpg" alt="image">
-                            <div class="promo__images-elem promo__images-elem_up">
-                                <div class="promo__images-hr"><span>24</span> hr</div>
-                                <div class="promo__images-text">Quick service</div>
-                            </div>
-                        </div>
+                    <div class="get__content">
+                        <h2 class="title get__title">Get in touch with us for your service related query</h2>
+                        <a class="main-btn get__btn">Contact Us</a>
                     </div>
                 </div>
+            </section>
+            <div class="numbers">
+                <div class="container">
+                    <ul class="numbers__menu">
+                        <il class="numbers__item">
+                            <span class="numbers__number">20+</span>
+                            <span class="numbers__desc">Proffesional</span>
+                        </il>
+                        <il class="numbers__item">
+                            <span class="numbers__number">10+</span>
+                            <span class="numbers__desc">Years Eperience</span>
+                        </il>
+                        <il class="numbers__item">
+                            <span class="numbers__number">12K+</span>
+                            <span class="numbers__desc">Service Closed</span>
+                        </il>
+                        <il class="numbers__item">
+                            <span class="numbers__number">100%</span>
+                            <span class="numbers__desc">Customer Satisfaction</span>
+                        </il>
+                    </ul>
+                </div>
             </div>
-        </section>
+            <section class="brands">
+                <div class="container">
+                    <h2 class="title brands__title">Brands we Serve</h2>
+                    <div class="brands__block">
+                        <div class="brands__item"><img src="icons/logos/logo-1.svg" alt=""></div>
+                        <div class="brands__item"><img src="icons/logos/logo-3.svg" alt=""></div>
+                        <div class="brands__item"><img src="icons/logos/logo-6.svg" alt=""></div>
+                        <div class="brands__item"><img src="icons/logos/logo-7.svg" alt=""></div>
+                        <div class="brands__item"><img src="icons/logos/logo-8.svg" alt=""></div>
+                        <div class="brands__item"><img src="icons/logos/logo-1.svg" alt=""></div>
+                        <div class="brands__item"><img src="icons/logos/logo-3.svg" alt=""></div>
+                        <div class="brands__item"><img src="icons/logos/logo-7.svg" alt=""></div>
+                        <div class="brands__item"><img src="icons/logos/logo-7.svg" alt=""></div>
+                        <div class="brands__item"><img src="icons/logos/logo-8.svg" alt=""></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
     </div>
+    
 
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
