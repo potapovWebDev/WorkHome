@@ -584,6 +584,90 @@
 }
 
 
+.customers {
+    padding: 128px 0;
+    font-size: 24px;
+    font-family: Manrope;
+    font-weight: 600;
+    line-height: 36px;
+    background-color: #F2F2F2;
+}
+
+.customers__carousel-block {
+    padding: 72px;
+    height: 380px;
+    width: 615px;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.customers__carousel .slick-list {
+    margin: 0 -10px;
+}
+.slick-slide {
+    margin: 0 10px;
+}
+
+.customers__carousel-item {
+    display: grid;
+    grid-template: repeat(2, auto)/ 64px auto; 
+    column-gap: 16px;
+    margin-bottom: 25px;
+}
+
+.customers__carousel-item img {
+    grid-row: span 2;
+}
+
+.customers__carousel-name {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.customers__carousel-city {
+    font-size: 16px;
+    line-height: 28px;
+    color: #939191;
+}
+
+.customers__carousel-arrows {
+    display: flex;
+}
+
+.customers__carousel-arrow {
+    margin-right: 25px;
+    cursor: pointer;
+    position: relative;
+    display: block;
+}
+
+.customers__carousel-arrow::before {
+    content: '';
+    display: block;
+    width: 62px;
+    height: 62px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    transition: all .3s ease;
+}
+
+.customers__carousel-arrow:hover path{
+    fill: #fff;
+}
+
+.customers__carousel-arrow:hover::before{
+    transform: translate(-50%, -50%) scale(1);
+}
+.customers__carousel-arrow:last-child {
+    margin-right: 0;
+}
+
+
+
 
 
 
