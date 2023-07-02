@@ -5,9 +5,22 @@ $(function () {
     infinite: false,
     slidesToShow: 2,
     slidesToScroll: 2,
-    draggable: false,
-    arrows: false
+    draggable: true,
+    arrows: false,
+    waitForAnimate: false,
+    dots: true
   });
+
+  $('.customers__carousel-prew').on('click', function (e){
+    e.preventDefault()
+    $('.customers__carousel').slick('slickPrev')
+  });
+  $('.customers__carousel-next').on('click', function (e){
+    e.preventDefault()
+    $('.customers__carousel').slick('slickNext')
+  });
+  
+
 
   $("#rateYo").rateYo({
     "rating" : 4.5

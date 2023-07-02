@@ -605,8 +605,46 @@
     margin: 0 -10px;
 }
 .slick-slide {
-    margin: 0 10px;
+    margin: 0 20px;
 }
+
+.customers {
+    position: relative;
+}
+
+.customers__title {
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 76px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 76px;
+
+}
+
+.customers .slick-dots{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.customers .slick-dots li{
+    margin: 0 10px;
+    width: 40px;
+    height: 4px;
+    background-color: #939191;
+
+}
+
+.customers .slick-dots li button{
+    font-size: 0;
+    padding: 0;
+}
+
+.customers .slick-dots li.slick-active{
+    background-color: #FF6433;
+}
+
 
 .customers__carousel-item {
     display: grid;
@@ -632,6 +670,11 @@
 
 .customers__carousel-arrows {
     display: flex;
+    position: absolute;
+    right: 50%;
+    bottom: 74px;
+    transform: translateX(650px);
+    z-index: 2;
 }
 
 .customers__carousel-arrow {
@@ -639,6 +682,7 @@
     cursor: pointer;
     position: relative;
     display: block;
+    z-index: 2;
 }
 
 .customers__carousel-arrow::before {
@@ -653,10 +697,12 @@
     transform: translate(-50%, -50%) scale(0);
     border-radius: 50%;
     transition: all .3s ease;
+    z-index: -1;
 }
 
-.customers__carousel-arrow:hover path{
+.customers__carousel-arrow:hover  path{
     fill: #fff;
+    z-index: 2;
 }
 
 .customers__carousel-arrow:hover::before{
@@ -665,6 +711,7 @@
 .customers__carousel-arrow:last-child {
     margin-right: 0;
 }
+
 
 
 
