@@ -1,3 +1,5 @@
+/* =================  GLOBAL  ================= */
+/* =================  GLOBAL  ================= */
 .wrapper {
     min-height: 100%;
     width: 100%;
@@ -36,7 +38,8 @@
     text-align: center;
 }
 
-/* ------------------ глобальные стили -------------------- */
+/* =================  PROMO  ================= */
+/* =================  PROMO  ================= */
 
 .promo {
     padding: 80px 0 135px;
@@ -241,6 +244,10 @@
     padding: 24px 32px 
 }
 
+
+/* =================  OFFER  ================= */
+/* =================  OFFER  ================= */
+
 .offer {
     padding: 128px 0;
     background-color: #F2F2F2;
@@ -322,6 +329,9 @@
 .offer__more:hover img {
     animation: arrow-right 3s infinite;
 }
+
+/* =================  FOLLOW  ================= */
+/* =================  FOLLOW  ================= */
 
 .follow {
     padding: 134px;
@@ -412,6 +422,9 @@
     display: none;
 }
 
+/* =================  GET  ================= */
+/* =================  GET  ================= */
+
 .get {
     font-size: 48px;
     font-weight: 700;
@@ -477,6 +490,9 @@
 
 }
 
+/* =================  NUMBERS  ================= */
+/* =================  NUMBERS  ================= */
+
 .numbers {
     font-size: 24px;
     font-family: Manrope;
@@ -506,6 +522,9 @@
     color: #661CE7;
 }
 
+/* =================  BRANDS  ================= */
+/* =================  BRANDS  ================= */
+
 .brands {
     background: #E2E6E9;
     padding: 128px 0 80px;
@@ -522,6 +541,9 @@
     display: grid;
     grid-template: repeat(5, auto) / repeat(5, auto);
 }
+
+/* =================  BLOG  ================= */
+/* =================  BLOG  ================= */
 
 .blog {
     padding: 130px 0 ;
@@ -583,6 +605,8 @@
     margin-bottom: 16px;
 }
 
+/* =================  CUSTOMERS  ================= */
+/* =================  CUSTOMERS  ================= */
 
 .customers {
     padding: 128px 0;
@@ -711,6 +735,89 @@
 .customers__carousel-arrow:last-child {
     margin-right: 0;
 }
+
+/* =================  QUESTIONS  ================= */
+/* =================  QUESTIONS  ================= */
+
+.questions {
+    padding: 128px 0;
+    font-family: Manrope;
+    background-color: #E2E6E9;
+    
+}
+
+.questions__title {
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 76px;
+    margin-bottom: 85px;
+    text-align: center;
+}
+
+.questions__acc-item {
+    background-color: #fff;
+    padding: 40px;
+    display: block;
+    max-width: 900px;
+    margin: 0 auto 12px;
+    position: relative;
+}
+
+.questions__acc-item::before,
+.questions__acc-item::after{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 56px;
+    right: 52px;
+    z-index: 2;
+}
+
+.questions__acc-item::after {
+    transform: rotate(90deg);
+}
+
+.questions__acc-item--active.questions__acc-item::after {
+    transform: rotate(0deg);
+}
+
+
+.questions__square {
+    width: 50px;
+    height: 50px;
+    background-color: #ff6333;
+    position: absolute;
+    top: 32px;
+    right: 40px;
+}
+
+.questions__acc-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    padding-right: 110px;
+}
+
+.questions__acc-text {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.75;
+    color: #939191;
+    padding-right: 110px;
+    margin-top: 10px;
+    display: none;
+    transition: all .3 ease;
+}
+
+.questions__acc-item--active .questions__acc-text {
+    display: block;
+}
+
+
 
 
 
