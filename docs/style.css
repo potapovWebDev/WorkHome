@@ -1,5 +1,10 @@
 /* =================  GLOBAL  ================= */
 /* =================  GLOBAL  ================= */
+
+.body {
+    font-family: Manrope;
+    font-size: 16px;
+}
 .wrapper {
     min-height: 100%;
     width: 100%;
@@ -43,7 +48,6 @@
 
 .promo {
     padding: 80px 0 135px;
-    font-family: 'Manrope', sans-serif;
     font-weight: 600;
 }
 
@@ -52,7 +56,6 @@
     display: flex;
     align-items: center;
     justify-content: end;
-    font-family: 'Manrope', sans-serif;
     font-weight: 600;
     padding: 18px 0 16px;
 }
@@ -163,7 +166,6 @@
 }
 
 .promo__timetable_desc {
-    font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     color: #939191;
@@ -225,7 +227,6 @@
 }
 
 .promo__images-rat {
-    font-size: 16px;
     opacity: .7;
     margin-right: 15px;
 }
@@ -251,7 +252,6 @@
 .offer {
     padding: 128px 0;
     background-color: #F2F2F2;
-    font-family: "Manrope";
     font-size: 24px;
     font-weight: 600;
     line-height: 36px;
@@ -335,15 +335,13 @@
 
 .follow {
     padding: 134px;
-    font-size: 32px;
-    font-family: Manrope;
     font-weight: 700;
     line-height: 48px;
 }
 
 .follow__wrapp {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: start;
 }
 .follow__content {
@@ -363,7 +361,6 @@
 }
 
 .follow__text {
-    font-size: 16px;
     font-weight: 600;
     line-height: 28px;
     opacity: .6;
@@ -374,6 +371,7 @@
 .follow__item-title {
     margin-bottom: 8px;
     position: relative;
+    font-size: 32px;
 }
 
 .follow__item-title::before {
@@ -428,7 +426,6 @@
 .get {
     font-size: 48px;
     font-weight: 700;
-    font-family: 'Manrope';
     line-height: 1.4;
     height: 500px;
     /* background-image: url('img/contact/Image-1.jpg'), url('img/contact/image-2.jpg');
@@ -495,7 +492,6 @@
 
 .numbers {
     font-size: 24px;
-    font-family: Manrope;
     font-weight: 600;
     line-height: 36px;
     opacity: .7;
@@ -532,7 +528,6 @@
 
 .brands__title {
     font-size: 64px;
-    font-family: Manrope;
     line-height: 84px;
     text-align: center;
 }
@@ -547,8 +542,6 @@
 
 .blog {
     padding: 130px 0 ;
-    font-size: 16px;
-    font-family: Manrope;
     font-weight: 600;
     line-height: 28px;
 }
@@ -591,7 +584,6 @@
 }
 
 .blog__time-post {
-    font-size: 16px;
     font-weight: 600;
     line-height: 28px;
     color: #939191;
@@ -611,7 +603,6 @@
 .customers {
     padding: 128px 0;
     font-size: 24px;
-    font-family: Manrope;
     font-weight: 600;
     line-height: 36px;
     background-color: #F2F2F2;
@@ -741,7 +732,6 @@
 
 .questions {
     padding: 128px 0;
-    font-family: Manrope;
     background-color: #E2E6E9;
     
 }
@@ -775,6 +765,7 @@
     top: 56px;
     right: 52px;
     z-index: 2;
+    transition: all .3s ease;
 }
 
 .questions__acc-item::after {
@@ -783,6 +774,7 @@
 
 .questions__acc-item--active.questions__acc-item::after {
     transform: rotate(0deg);
+    transition: all .3s ease;
 }
 
 
@@ -809,7 +801,7 @@
     color: #939191;
     padding-right: 110px;
     margin-top: 10px;
-    display: none;
+    /* display: none; */
     transition: all .3 ease;
 }
 
@@ -817,9 +809,191 @@
     display: block;
 }
 
+/* =================  EXPERTS  ================= */
+/* =================  EXPERTS  ================= */
+
+.experts {
+    padding: 120px 0 520px 0;
+    font-style: normal;
+}
+
+.experts__title {
+    margin-bottom: 48px;
+    max-width: 520px;
+}
+
+.experts__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.experts__form > *{
+    display: block;
+}
+
+.experts__input {
+    width: 600px;
+    height: 70px;
+    background-color: #F2F2F2;
+    border-radius: 2px;
+    margin-bottom: 4px;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 20px 40px;
+}
+
+.experts__input::placeholder {
+    color: black;
+}
+
+.experts__input:nth-child(4) {
+    margin-bottom: 48px;
+}
+
+.experts__contact-sub {
+    line-height: 28px;
+    opacity: .7;
+    margin-bottom: 2px;
+}
+
+.experts__contact {
+    margin-bottom: 32px;
+}
+
+.experts__contact:last-child {
+    margin-bottom: 0;
+}
+
+.experts__contact-text {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+/* =================  EXPERTS  ================= */
+/* =================  EXPERTS  ================= */
+
+.map {
+    position: relative;
+}
+
+.map__box {
+    width: 1280px;
+    height: 500px;
+    position: absolute;
+    top: -330px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.map__image {
+    height: 450px;
+    background: url('img/footer/Image.jpg') center center/cover no-repeat;
+}
 
 
+/* =================  FOOTER  ================= */
+/* =================  FOOTER  ================= */
+.footer__top {
+    padding: 130px 0;
+    background-color: #222020;
+    color: #fff;
+}
 
+.footer__top-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__top-head,
+.footer__top-contacts {
+    width: 100%;
+}
+
+.footer__top-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 64px;
+}
+
+.footer__top-socials {
+    display: flex;
+}
+
+.footer__top-icons {
+    margin-right: 24px;
+    
+}
+
+.footer__top-icons svg path {
+    transition: all .3s ease;
+}
+
+.footer__top-icons:hover svg path {
+    fill: #ff6333;
+}
+
+.footer__contact-sub {
+    line-height: 28px;
+    opacity: .7;
+    margin-bottom: 2px;
+}
+
+.footer__contact {
+    margin-bottom: 32px;
+}
+
+.footer__contact:last-child {
+    margin-bottom: 0;
+}
+
+.footer__contact-text {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.footer__bottom {
+    background-color: #1E1B1B;
+    color: #fff;
+}
+
+.footer__bottom-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 65px 0;
+}
+
+.footer__bottom-logo {
+    transition: all .3s ease;
+}
+.footer__bottom-logo:hover {
+    transform: scale(1.1);
+}
+
+.footer__bottom-menu {
+    display: flex;
+}
+
+.footer__bottom-item {
+    margin-right: 35px;
+    font-weight: 600;
+    line-height: 28px;
+    transition: all .3s ease;
+}
+.footer__bottom-item:hover {
+    color: #ff6333;
+}
+
+.footer__bottom-item:last-child {
+    margin-right: 0;
+}
+
+.footer__bottom-copy {
+    font-weight: 600;
+    line-height: 28px;
+    color: #939191;
+}
 
 
 

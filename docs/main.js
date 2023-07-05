@@ -29,9 +29,37 @@ $(function () {
       $('.questions__acc-item').removeClass('questions__acc-item--active')
       $('.questions__acc-text').slideUp()
       $(this).addClass('questions__acc-item--active')
-      $(this).children('.question__acc-text').slideDown()
+      $(this).children('.questions__acc-text').slideDown()
     }
   })
+
+  $(".header__nav-item").on("click","a", function (event) {
+      //отменяем стандартную обработку нажатия по ссылке
+      event.preventDefault();
+
+      //забираем идентификатор бока с атрибута href
+      var id  = $(this).attr('href'),
+
+      //узнаем высоту от начала страницы до блока на который ссылается якорь
+          top = $(id).offset().top;
+        
+      //анимируем переход на расстояние - top за 1500 мс
+      $('body,html').animate({scrollTop: top}, 1500);
+  });
+  $(".footer__bottom-item").on("click","a", function (event) {
+      //отменяем стандартную обработку нажатия по ссылке
+      event.preventDefault();
+
+      //забираем идентификатор бока с атрибута href
+      var id  = $(this).attr('href'),
+
+      //узнаем высоту от начала страницы до блока на который ссылается якорь
+          top = $(id).offset().top;
+        
+      //анимируем переход на расстояние - top за 1500 мс
+      $('body,html').animate({scrollTop: top}, 1500);
+  });
+    
   
 
 
