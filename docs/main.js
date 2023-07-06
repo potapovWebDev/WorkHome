@@ -59,6 +59,22 @@ $(function () {
       //анимируем переход на расстояние - top за 1500 мс
       $('body,html').animate({scrollTop: top}, 1500);
   });
+
+  setInterval (() => {
+    if ($(window).scrollTop() > 0) {
+      $('.burger').addClass('burger_follow')
+    } else {
+      $('.burger').removeClass('burger_follow')
+    }
+  }, 0);
+  $('.burger').on('click', function (e) {
+    e.preventDefault()
+    $('.header').toggleClass('header_active')
+  })
+  $('.burger').on('click', function (e) {
+    e.preventDefault()
+    $('.burger').toggleClass('burger_active')
+  })
     
   
 

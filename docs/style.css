@@ -2,7 +2,7 @@
 /* =================  GLOBAL  ================= */
 
 .body {
-    font-family: Manrope;
+    font-family: "Manrope", sans-serif;
     font-size: 16px;
 }
 .wrapper {
@@ -117,12 +117,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 15px;
 }
 
 .promo__title {
-    max-width: 620px;
     margin-bottom: 32px;
+    max-width: 620px;
 }
 
 .promo__buttons {
@@ -996,6 +995,300 @@
     line-height: 28px;
     color: #939191;
 }
+
+/* =================  MEDIA  ================= */
+/* =================  MEDIA  ================= */
+
+
+/* ************************ MAX_WIDTH 1400 ************************ */
+
+/* ------------------------------- MEDIA GLOBAL ------------------------------- */
+
+@media (max-width: 1400px) {
+    .main-btn {
+        font-size: 15px;
+    
+    }
+    
+    /* ------------------------------- MEDIA PROMO ------------------------------- */
+    
+    .promo__title {
+        font-size: 52px;
+    }
+    
+    .promo__images-text {
+        font-size: 18px;
+    }
+    
+    .promo__images-hr {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .promo__images-rat span {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    
+    .promo__images-rat {
+        font-size: 14px;
+    }
+    
+}
+
+/* ************************ MAX_WIDTH 1200 ************************ */
+
+@media (max-width: 1200px) {
+    /* ------------------------------- MEDIA GLOBAL ------------------------------- */
+
+.main-btn {
+    font-size: 13px;
+
+}
+
+/* ------------------------------- MEDIA PROMO ------------------------------- */
+
+.promo {
+    padding: 20px 0 0;
+}
+
+.promo__body-wrapp {
+    align-items: flex-start;
+}
+
+.promo__title {
+    font-size: 40px;
+    line-height: 52px;
+    max-width: 500px
+}
+
+.promo__timetable_desc {
+    font-size: 14px;
+}
+
+.promo__timetable_text {
+    font-size: 16px;
+}
+
+.promo__body-wrapp {
+    position: relative;
+}
+
+.promo__images {
+    max-width: 350px;
+    position: static;
+}
+
+.promo__images-elem {
+    border: 1px solid black
+}
+
+.promo__images-elem_up {
+    bottom: 100px;
+    left: 0;
+    top: auto;
+
+}
+
+.promo__images-elem_down {
+    bottom: 100px;
+    left: 275px;
+    top: auto;
+}
+
+.promo__images-hr {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+}
+
+.promo__images-hr span {
+    font-size: 18px;
+    display: block;
+    margin-top: 7px;
+}
+}
+
+
+
+/* ************************ MAX_WIDTH 992 ************************ */
+
+/* ------------------------------- MEDIA HEADER ------------------------------- */
+
+
+@media (max-width: 992px) {
+    .header {
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        bottom: 0;
+        left: -100%;
+        transition: all .3s ease;
+    }
+
+    .header_active {
+        display: block;
+        left: 0;
+    }
+
+    .header__wrapp {
+        background-color: #fff;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 320px;
+        height: 100vh;
+        padding: 40px 0;
+        transition: all .3s ease;
+        margin: 0 -15px;
+    }
+
+    .logo_r {
+        margin: 0 auto;
+    }
+
+    .header__nav-menu {
+        flex-direction: column;
+        border-right: none;
+    }
+
+    .header__nav-item {
+        margin: 10px auto;
+    }
+
+    .header__nav-item:last-child {
+        margin: 0 auto;
+    }
+
+    .burger {
+        width: 55px;
+        height: 55px;     
+        position: fixed;
+        top: 25px;
+        right: 25px;
+        z-index: 150;
+        transition: all .3s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    .burger_follow {
+        background-color: #fff;
+        border-radius: 50%;
+
+        box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+    }
+    .burger span {
+        display: block;
+        width: 35px;
+        height: 4px;
+        background-color: black;
+        border-radius: 2px;
+        position: relative;
+        
+    }
+    .burger span::before,
+    .burger span::after {
+        content: '';
+        display: block;
+        width: 35px;
+        height: 4px;
+        background-color: black;
+        border-radius: 2px;
+        position: absolute;
+        top: 8px;
+        transition: all .3s ease;
+    }
+
+    .burger span::after {
+        top: -8px;
+    }
+
+    .burger_active span {
+        background-color: #fff;
+    }
+    .burger_active span::before {
+        transform: rotate(45deg);
+        top: 0px;
+    }
+    .burger_active span::after {
+        transform: rotate(135deg);
+        top: 0px;
+    }
+
+    /* ------------------------------- MEDIA PROMO ------------------------------- */
+
+    .promo {
+        padding: 80px 0 100px
+    }
+
+    .promo__images img {
+        display: none;
+    }
+
+    .promo__body-wrapp {
+        justify-content: center;
+    }
+
+    
+
+    .promo__images-elem_up {
+        display: none; 
+
+    
+    }
+    
+    .promo__images-elem_down {
+        display: none; 
+
+    }
+
+    }
+
+/* ************************ MAX_WIDTH 576 ************************ */
+
+@media (max-width: 576px) {
+
+/* ------------------------------- MEDIA GLOBAL ------------------------------- */
+    .main-btn {
+        font-size: 10px;
+        padding: 14px 24px;
+    }
+
+/* ------------------------------- MEDIA PROMO ------------------------------- */
+
+    .promo__title {
+        font-size: 25px;
+        line-height: 36px;
+    }
+
+    .promo_buttons {
+        font-size: 14px;
+    }
+
+    .promo__video::before {
+        left: -29px;
+    }
+
+    .promo__timetable_desc {
+        font-size: 8px;
+        line-height: 13px;
+    }
+
+    .promo__timetable_text {
+        font-size: 10px;
+    }
+
+    .promo__timetable {
+        column-gap: 8px;
+    }
+
+}
+
+    
+
 
 
 
