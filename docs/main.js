@@ -8,7 +8,17 @@ $(function () {
     draggable: true,
     arrows: false,
     waitForAnimate: false,
-    dots: true
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
 
   $('.customers__carousel-prew').on('click', function (e){
