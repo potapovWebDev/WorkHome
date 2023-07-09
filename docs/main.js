@@ -70,13 +70,15 @@ $(function () {
       $('body,html').animate({scrollTop: top}, 1500);
   });
 
-  setInterval (() => {
+  $(window).on('scroll', function () {
     if ($(window).scrollTop() > 0) {
       $('.burger').addClass('burger_follow')
     } else {
       $('.burger').removeClass('burger_follow')
     }
-  }, 0);
+  })
+  
+
   $('.burger').on('click', function (e) {
     e.preventDefault()
     $('.header').toggleClass('header_active')

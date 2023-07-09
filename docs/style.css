@@ -1044,6 +1044,12 @@
         right: 25px;
         transform: none;
     }
+
+    /* ------------------------------- MEDIA MAP ------------------------------- */ 
+    .map__box {
+        max-width: 90%;
+    }
+
      
     
 }
@@ -1173,9 +1179,51 @@
     .customers__carousel-block {
         height: auto;
     }
-    
+
+/* ------------------------------- MEDIA EXPERTS ------------------------------- */    
+
+    .experts__inner {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .experts__title {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .experts__contacts {
+        margin-bottom: 50px;
+    }
+
+    .experts__inner .main-btn {
+        margin: 0 auto;
+    }
+
+/* ------------------------------- MEDIA MAP ------------------------------- */ 
+    .map__box {
+        max-width: 90%;
+    }
 
 }
+
+/* ------------------------------- MEDIA FOOTER ------------------------------- */ 
+
+    .footer__top {
+        padding: 60px 0;
+    }
+
+    .footer__top-wrap {
+        flex-direction: column;
+    }
+
+    .footer__top-head {
+        margin-bottom: 20px;
+    }
+
+    .footer__top-title {
+        margin-bottom: 28px;
+    }
 
 
 
@@ -1399,7 +1447,44 @@
         display: none;
     }
 
+    /* ------------------------------- MEDIA EXPERTS ------------------------------- */
 
+    .experts {
+        padding: 59px 0 383px 0;
+    }
+
+    .experts__forms {
+        width: 100%;
+    }
+
+    .experts__input {
+        width: 100%;
+    }
+
+    .experts__title {
+        font-size: 56px;
+        line-height: 68px;
+
+    }
+
+    /* ------------------------------- MEDIA MAP ------------------------------- */
+
+    .map__box {
+        max-width: 90%;
+        
+    }
+
+    /* ------------------------------- MEDIA FOOTER ------------------------------- */
+
+    .footer__bottom-wrap {
+        padding: 45px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__bottom-wrap > div {
+        margin-bottom: 10px;
+    }
 
     }
 
@@ -1620,10 +1705,51 @@
         padding-right: 70px;
     }
 
+    /* ------------------------------- MEDIA EXPERTS ------------------------------- */
 
+    .experts__title {
+        font-size: 36px;
+        line-height: 54px;
+        margin-bottom: 14px;
+    }
+
+    .experts__contact-sub {
+        font-size: 14px;
+    }
+
+    .experts__contact-text {
+        font-size: 22px;
+        line-height: 29px;
+    }
+
+    /* ------------------------------- MEDIA MAP ------------------------------- */
+
+    .map__box {
+        max-width: 90%;
+        height: 300px;
+        /* margin: 0 20px 0 20px; */
+    }
+
+    .map__image {
+        display: none;
+    }
+
+    /* ------------------------------- MEDIA FOOTER ------------------------------- */ 
+
+    .footer__top-title {
+        font-size: 35px;
+    }
+
+    .footer__bottom-menu {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .footer__bottom-item {
+        margin-right: 0;
+    }
 
 }
-
     
 
 
