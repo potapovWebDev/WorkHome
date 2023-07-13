@@ -1,0 +1,8 @@
+@mixin font($ff, $weight) {
+    font-family: $ff, sans-serif;
+    font-weight: $weight;
+  }
+
+@mixin transition {
+  transition: all .3s ease;
+}

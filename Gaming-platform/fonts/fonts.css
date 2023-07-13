@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Light.eot');
+    src: local('Poppins Light'), local('Poppins-Light'),
+        url('Poppins-Light.eot?#iefix') format('embedded-opentype'),
+        url('Poppins-Light.woff2') format('woff2'),
+        url('Poppins-Light.woff') format('woff'),
+        url('Poppins-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Regular.eot');
+    src: local('Poppins Regular'), local('Poppins-Regular'),
+        url('Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Poppins-Regular.woff2') format('woff2'),
+        url('Poppins-Regular.woff') format('woff'),
+        url('Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Medium.eot');
+    src: local('Poppins Medium'), local('Poppins-Medium'),
+        url('Poppins-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Poppins-Medium.woff2') format('woff2'),
+        url('Poppins-Medium.woff') format('woff'),
+        url('Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-SemiBold.eot');
+    src: local('Poppins Semi Bold'), local('Poppins-SemiBold'),
+        url('Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Poppins-SemiBold.woff2') format('woff2'),
+        url('Poppins-SemiBold.woff') format('woff'),
+        url('Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Bold.eot');
+    src: local('Poppins Bold'), local('Poppins-Bold'),
+        url('Poppins-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Poppins-Bold.woff2') format('woff2'),
+        url('Poppins-Bold.woff') format('woff'),
+        url('Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-ExtraBold.eot');
+    src: local('Poppins Extra Bold'), local('Poppins-ExtraBold'),
+        url('Poppins-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Poppins-ExtraBold.woff2') format('woff2'),
+        url('Poppins-ExtraBold.woff') format('woff'),
+        url('Poppins-Extraold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('Rubik-Regular.eot');
+    src: local('Rubik Regular'), local('Rubik-Regular'),
+        url('Rubik-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Rubik-Regular.woff2') format('woff2'),
+        url('Rubik-Regular.woff') format('woff'),
+        url('Rubik-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url('Rubik-Medium.eot');
+    src: local('Rubik Medium'), local('Rubik-Medium'),
+        url('Rubik-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Rubik-Medium.woff2') format('woff2'),
+        url('Rubik-Medium.woff') format('woff'),
+        url('Rubik-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url('Rubik-Bold.eot');
+    src: local('Rubik Bold'), local('Rubik-Bold'),
+        url('Rubik-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Rubik-Bold.woff2') format('woff2'),
+        url('Rubik-Bold.woff') format('woff'),
+        url('Rubik-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
