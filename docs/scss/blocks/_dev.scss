@@ -1,0 +1,35 @@
+.dev {
+    padding: 130px 20px 0;
+    &__wrapp {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    &__title {
+        margin-bottom: 65px;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    &__box {
+        width: 1145px;
+        margin: 0 auto;
+    }
+    &__suptitle {
+        color: $color-main-tx;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 185%;
+        margin-bottom: 30px;
+    }
+    &__text {
+        max-width: 510px;
+        margin-bottom: 45px;
+    }
+    &__img {
+        overflow: hidden;
+        border-radius: 5px;
+        img {
+            object-fit: cover;
+        }
+    }
+}
