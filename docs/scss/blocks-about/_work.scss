@@ -1,0 +1,50 @@
+.work {
+    padding: 140px 0;
+    &__title {
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 60px;
+    }
+    &__box {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        max-width: 380px;
+        height: 350px;
+        padding: 65px 35px;
+        color: $color-main-tx;
+        background-color: $color-bg-block;
+        border-radius: 20px;
+    }
+    &__desc {
+        padding: 8px 12px;
+        max-width: 140px;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 185%;
+        margin-bottom: 25px;
+        &_1{
+            background: rgba(176, 0, 220, 0.11);
+        }
+        &_2{
+            background: rgba(220, 66, 0, 0.11);
+        }
+        &_3{
+            background: rgba(0, 220, 141, 0.11);
+
+        }
+    }
+    &__suptitle {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 185%;
+        margin-bottom: 15px;
+    }
+    &__text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 185%;
+    }
+}

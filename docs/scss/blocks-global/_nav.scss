@@ -1,0 +1,15 @@
+.nav {
+    &__menu {
+        display: flex;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        color: $color-main-tx;
+        margin-right: 88px;
+        @include transition;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

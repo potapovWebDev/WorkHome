@@ -1,0 +1,62 @@
+.about-slide {
+    min-height: 660px;
+    position: relative;
+    margin-top: 35px;
+    &__desc {
+        padding-top: 190px;
+        max-width: 440px;
+    }
+    &__title {
+        margin-bottom: 25px;
+    }
+    &__text {
+        margin-bottom: 50px;
+    }
+    &__wrapp {
+        width: 740px;
+        height: 650px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+    }
+    &__box-arrows {
+        width: 180px;
+        height: 68px;
+        background-color: #333;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        color: $color-main-tx;
+        line-height: 200%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    &__num {
+        width: 100%;
+        text-align: center;
+    }
+    &__arrow {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__btn {
+        display: block;
+        max-width: 160px;
+        position: relative;
+        &::before {
+            content: '';
+            width: 12px;
+            height: 12px;
+            background: url('../../icons/about/arrow-r.svg') 0 0/cover no-repeat;
+            position: absolute;
+            top: 16px;
+            right: 21px;
+
+        }
+    }
+}

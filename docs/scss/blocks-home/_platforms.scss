@@ -1,0 +1,54 @@
+.platforms {
+    padding: 155px 0 0;
+    &__wrapp {
+        width: 100%;
+        min-height: 880px;
+        background: linear-gradient(rgba(0, 0, 0, 0.8)), url('../../img/Home/sup-bg.jpg') 0 0/cover no-repeat ;
+        backdrop-filter: blur(2px);
+        text-align: center;
+        padding: 90px 0;
+    }
+    &__title {
+        max-width: 720px;
+        margin: 0 auto 25px;
+    }
+    &__text {
+        max-width: 720px;
+        margin: 0 auto 100px;
+    }
+    &__box {
+        display: grid;
+        grid-template: auto auto/ repeat(4, 200px);
+        justify-content: center;
+        gap: 60px 100px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-icon {
+            width: 65px;
+            height: 65px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        &-desc {
+            color: $color-main-tx;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 185%;
+            margin-bottom: 25px;
+        }
+        &_3d {
+            grid-column: 3/4;
+        }
+        &_vr {
+            grid-column: 2/3;
+        }
+    }
+}

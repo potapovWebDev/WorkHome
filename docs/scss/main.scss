@@ -1,0 +1,47 @@
+@import "reset";
+@import "vars";
+@import "mixins";
+
+@import "blocks-global/header";
+@import "blocks-global/nav";
+@import "blocks-global/buttons";
+@import "blocks-global/typography";
+@import "blocks-global/feedback";
+@import "blocks-global/footer";
+
+@import "blocks-home/promo";
+@import "blocks-home/tranding";
+@import "blocks-home/dev";
+@import "blocks-home/platforms";
+@import "blocks-home/projects";
+
+@import "blocks-about/about-slide";
+@import "blocks-about/work";
+@import "blocks-about/avatar";
+@import "blocks-about/team";
+
+
+
+
+/* --------------------GLOBAL-------------------- */
+
+body {
+    @include font(Pappins, 500);
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+.main {
+    &_home {
+        background: $color-bg-main;
+    }
+    &_about {
+        background: linear-gradient(177deg, #010101 0%, #1A0E01 100%);
+    }
+}
