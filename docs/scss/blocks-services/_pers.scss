@@ -1,0 +1,29 @@
+.pers {
+    &__block {
+        padding-top: 190px;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 140px;
+        margin-bottom: 100px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &_reverse {
+            flex-direction: row-reverse;
+        }
+    }
+    &__title {
+        margin-bottom: 40px;
+    }
+    &__text {
+        &_main {
+            margin-bottom: 18px;
+        }
+        &_desc {
+            margin-bottom: 45px;
+        }
+    }
+    &__content {
+        max-width: 490px;
+    }
+}

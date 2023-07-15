@@ -20,6 +20,11 @@
 @import "blocks-about/avatar";
 @import "blocks-about/team";
 
+@import "blocks-services/workplace";
+@import "blocks-services/video";
+@import "blocks-services/pers";
+@import "blocks-services/services-slide";
+
 
 
 
@@ -37,11 +42,14 @@ body {
 }
 
 
-.main {
+.bg__wrapp {
     &_home {
         background: $color-bg-main;
     }
     &_about {
+        background: linear-gradient(177deg, #010101 0%, #1A0E01 100%);
+    }
+    &_services {
         background: linear-gradient(177deg, #010101 0%, #1A0E01 100%);
     }
 }

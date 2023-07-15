@@ -2,6 +2,9 @@
     min-height: 660px;
     position: relative;
     margin-top: 35px;
+    .container {
+        position: relative;
+    }
     &__desc {
         padding-top: 190px;
         max-width: 440px;

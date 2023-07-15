@@ -1,0 +1,49 @@
+.video {
+    padding-top: 130px;
+    &__wrapp {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 80px;
+    }
+    &__title {
+        margin-bottom: 12px;
+    }
+    &__text {
+        margin-bottom: 25px;
+    }
+    &__preview {
+        max-width: 669px;
+        max-height: 355px;
+        position: relative;
+        &-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        &:hover {
+            .video__preview-icon svg path{
+                stroke: $color-buttons;
+                @include transition;
+            }
+        }
+    }
+    &__item {
+        color: $color-main-tx;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 185%;
+        position: relative;
+        padding-left: 34px;
+        margin-bottom: 19px;
+        &::after {
+            content: '' ;
+            background: url('../../icons/services/check.svg') center center/cover no-repeat;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 0;
+            left: -10px;
+        }
+    }
+}

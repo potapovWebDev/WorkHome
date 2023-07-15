@@ -1,6 +1,5 @@
 .btn {
     color: $color-main-tx;
-    
     &__main {
         display: block;
         cursor: pointer;
@@ -23,5 +22,10 @@
         background-color: $color-buttons;
         padding: 10px 20px;
         border-radius: 8px;
+    }
+    &__rectangle {
+        display: inline-block;
+        border-radius: 0;
+        padding: 10px 40px;
     }
 }
