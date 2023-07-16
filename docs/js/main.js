@@ -16,6 +16,16 @@ $('.services-slide__carousel').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   arrows: false,
+  dots: true,
+});
+
+$('.services-slide__arrow_l').on('click', function (e){
+  e.preventDefault()
+  $('.services-slide__carousel').slick('slickPrev')
+});
+$('.services-slide__arrow_r').on('click', function (e){
+  e.preventDefault()
+  $('.services-slide__carousel').slick('slickNext')
 });
 
 Fancybox.bind()

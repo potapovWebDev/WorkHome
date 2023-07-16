@@ -1,4 +1,14 @@
 .services-slide {
+    padding: 80px 0 60px;
+    background-color: $color-bg-block;
+    &__wrapp {
+        max-width: 440px;
+        text-align: center;
+        margin: 0 auto 60px;
+    }
+    &__title {
+        margin-bottom: 20px;
+    }
     
     .slick-slide {
         margin: 0 25px;
@@ -7,12 +17,19 @@
         margin: 0 -25px;
     }
     &__item {
-        /* max-width: 600px; */
-        /* max-height: 600px; */
+        min-height: 400px;
+        min-height: 200px;
         border-radius: 10px;
         border: 2px solid #fff;
         color: $color-main-tx;
         padding: 30px;
+        cursor: pointer;
+        @include transition;
+        &:hover {
+            background-color: #0F0901;
+            border-color: $color-buttons;
+            
+        }
     }
     &__person {
         display: grid;
@@ -55,8 +72,67 @@
             transform: translateY(-50%);
         }
     }
+    .slick-dots {
+        display: flex;
+        justify-content: start;
+        @include transition;
+        li {
+            width: 16px;
+            height: 16px;
+            background-color: #DDE0E4;
+            border-radius: 10px;
+            @include transition;
+            margin-right: 15px;
+            cursor: pointer;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        li.slick-active {
+            width: 36px;
+            background-color: $color-buttons;
+            @include transition;
+        }
+        li button {
+            font-size: 0;
+            padding: 0;
+        }
+
+    }
+    .slick-list {
+        margin-bottom: 80px;
+    }
+    
     &__text {
         font-size: 14px;
         line-height: 185%;
+    }
+    &__arrows {
+        max-width: 140px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 0 auto;
+        transform: translateY(-30px);
+    }
+    &__arrow {
+        display: block;
+        width: 60px;
+        height: 60px;
+        border: 2px solid $color-buttons;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include transition;
+        svg path{
+            fill: $color-buttons;
+            @include transition;
+        }
+        &:hover {
+            background-color: $color-buttons;
+            svg path {
+                fill: white;
+            }
+        }
     }
 }

@@ -25,6 +25,9 @@
 @import "blocks-services/pers";
 @import "blocks-services/services-slide";
 
+@import "blocks-news/page-title";
+@import "blocks-news/articles";
+
 
 
 
@@ -51,5 +54,8 @@ body {
     }
     &_services {
         background: linear-gradient(177deg, #010101 0%, #1A0E01 100%);
+    }
+    &_news {
+        background: linear-gradient(161deg, #050301 0%, #150C01 100%);
     }
 }
