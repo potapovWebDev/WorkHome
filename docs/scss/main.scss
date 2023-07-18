@@ -28,6 +28,9 @@
 @import "blocks-news/page-title";
 @import "blocks-news/articles";
 
+@import "blocks-contacts/contacts";
+@import "blocks-contacts/contacts-form";
+
 
 
 
@@ -57,5 +60,8 @@ body {
     }
     &_news {
         background: linear-gradient(161deg, #050301 0%, #150C01 100%);
+    }
+    &_contact {
+        background: linear-gradient(162deg, #090501 0%, #120A01 100%);
     }
 }

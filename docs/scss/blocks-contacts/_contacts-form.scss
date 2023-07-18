@@ -1,0 +1,87 @@
+.contacts-form {
+    text-align: center;
+    padding: 50px 0 60px;
+    &__wrapp {
+        position: relative;
+        /* overflow: hidden; */
+        &::after {
+            content: '';
+            width: 1048px;
+            height: 265px;
+            background: url('../icons/contacts/linear-t.svg') center center/cover no-repeat;
+            position: absolute;
+            top: 0;
+            right: 0;
+
+        }
+        &::before {
+            content: '';
+            width: 567px;
+            height: 255px;
+            background: url('../icons/contacts/linear-b.svg') center center/cover no-repeat;
+            position: absolute;
+            bottom: -52px;
+            left: -78px;
+
+        }
+    }
+    &__text {
+        margin-bottom: 80px;
+    }
+    .form-group {
+        max-width: 670px;
+        margin: 0 auto;
+        .form {
+            display: grid;
+            grid-template: repeat(4, auto)/ auto auto;
+            column-gap: 25px;
+            &>div {
+                input,
+                textarea{
+                    border: 1px solid #fff;
+                    border-radius: 9px;
+                    background-color: rgba(255, 255, 255, 0.07);
+                    width: 100%;
+                    color: #fff;
+                    margin-bottom: 20px;
+                    padding: 10px 20px;
+                }
+                input {
+                    min-height: 50px;
+                }   
+            }
+            &__textarea {
+                height: 230px;
+                resize: none;
+            }
+            &__btn {
+                background-color: $color-buttons;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 200%;
+                color: #FFF;
+                padding: 10px 40px;
+                border-radius: 10px;
+                width: 190px;
+                height: 50px;
+                grid-column: 2/3;
+                margin: 0 0 0 auto;
+            }
+            &>div:nth-child(3) {
+                grid-column: 1/3;
+            }
+            &>div:nth-child(4) {
+                grid-column: 1/3;
+            }
+        }
+    }
+    label {
+        display: block;
+        color: #4F4F4F;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 175%;
+        letter-spacing: -0.3px;
+    }
+    
+}
