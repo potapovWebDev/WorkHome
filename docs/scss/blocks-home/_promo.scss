@@ -44,3 +44,79 @@
     }
         
 }
+
+@media (max-width: 1400px) {
+    .promo {
+        &__img {
+            right: -250px;
+        }
+        &__icons-unity {
+            top: 240px;
+            right: 445px;
+        }
+        &__icons-cry {
+            top: -20px;
+            right: 275px;
+        }
+        &__icons-unreal {
+            top: -5px;
+            right: 50px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .promo {
+        &__img {
+            right: -300px;
+            top: -275px;
+        }
+        &__icons-unity {
+            top: 230px;
+            right: 395px;
+        }
+        &__icons-cry {
+            top: -60px;
+            right: 225px;
+        }
+        &__icons-unreal {
+            top: -45px;
+            right: 0px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .promo {
+        &__img {
+            display: none;
+        }
+        &__icons-unity {
+            display: none;
+        }
+        &__icons-cry {
+            display: none;
+        }
+        &__icons-unreal {
+            display: none;
+        }
+
+        &__content {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .promo {
+        padding: 80px 20px 0 20px;
+        &__suptitle {
+            font-size: 16px;
+        }
+        &__title {
+            margin-bottom: 15px;
+            font-size: 27px;
+        }
+    }
+    
+}

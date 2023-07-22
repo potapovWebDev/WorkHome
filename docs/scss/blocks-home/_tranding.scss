@@ -39,3 +39,44 @@
         
     }
 }
+
+@media (max-width: 1200px) {
+    .tranding {
+        padding: 100px 20px 0;
+        &__head {
+            justify-content: space-evenly;
+        }
+        &__box {
+            grid-template: auto/repeat(2, 250px);
+            justify-content: space-evenly;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .tranding {
+        &__title {
+            margin-bottom: 10px;
+        }
+        &__head {
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+        &__box {
+            grid-template: auto/250px;
+            justify-content: center;
+        }
+    
+        &__item {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .tranding {
+        &__title {
+            font-size: 19px;
+        }
+    }
+}

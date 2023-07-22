@@ -52,3 +52,38 @@
         }
     }
 }
+
+@media (max-width: 992px) {
+    .platforms {
+        &__box {
+            gap: 60px;
+            grid-template: auto auto/repeat(3, 200px);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .platforms {
+        &__box {
+            gap: 60px;
+            grid-template: repeat(3, auto)/  repeat(2, 200px);
+            
+        }
+        &__item_3d {
+            grid-column: auto/auto;
+        }
+        &__item_vr {
+            grid-column: auto/auto;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .platforms {
+        &__box {
+            gap: 60px;
+            grid-template: repeat(6, auto)/  200px;
+            
+        }
+    }
+}

@@ -48,3 +48,36 @@
         padding: 5px 5px 5px 25px;
     }
 }
+
+@media (max-width: 992px) {
+    .feedback__form {
+        min-width: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    .feedback__mail {
+        flex-direction: column;
+        height: auto;
+        align-items: start;
+    }
+    .feedback__form {
+        min-width: 100%;
+    }
+
+    .feedback__content {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .feedback__mail {
+        padding: 15px;
+    }
+    .feedback__suptext {
+        font-size: 12px;
+    }
+    .feedback__suptitle {
+        font-size: 20px;
+    }
+}

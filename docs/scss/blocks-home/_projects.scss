@@ -25,3 +25,12 @@
         overflow: hidden;
     }
 }
+
+
+@media (max-width: 576px) {
+    .project {
+        &__item {
+            max-width: 100%;
+        }
+    }
+}

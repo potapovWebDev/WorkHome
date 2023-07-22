@@ -49,8 +49,10 @@ body {
 
 
 .bg__wrapp {
+    overflow: hidden;
     &_home {
         background: $color-bg-main;
+        position: relative;
     }
     &_about {
         background: linear-gradient(177deg, #010101 0%, #1A0E01 100%);

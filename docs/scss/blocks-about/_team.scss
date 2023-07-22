@@ -33,3 +33,9 @@
         color: #E8E8E8;
     }
 }
+
+@media (max-width: 1400px) {
+    .team__item {
+        width: 270px;
+    }
+}
