@@ -42,7 +42,7 @@
     .header {
         position: fixed;
         top: 0;
-        left: -100%;
+        left: -110%;
         height: 100vh;
         padding: 0;
         background-color: $color-bg-block;
@@ -82,7 +82,7 @@
         
     }
 
-    span {
+    span.span-burg {
         display:block;
         background:#fff;
         border-radius:2px;
@@ -107,7 +107,7 @@
           position:absolute;
           height:100%;
           width:100%;
-          span {
+          span.span-burg {
             width: 27px;
             height: 4px;
             position: relative;
@@ -130,7 +130,7 @@
           height:100%;
           width:100%;
           transform:rotate(45deg);
-          span{
+          span.span-burg{
             &:nth-child(1){
               height:0%;
               width:4px;
@@ -153,7 +153,7 @@
       
       #menu-toggle.open {
         #hamburger {
-          span {
+          span.span-burg {
             width:0%;
             &:nth-child(1){
               transition-delay:0s;
@@ -167,13 +167,13 @@
           }
         }
         #cross {
-          span {
+          span.span-burg {
             &:nth-child(1){
               height:80%;
               transition-delay:.625s;
             }
           }
-          span {
+          span.span-burg {
             &:nth-child(2){
               width:80%;
               transition-delay:.375s;

@@ -39,3 +39,16 @@
         width: 270px;
     }
 }
+
+@media (max-width: 1200px) {
+    .team {
+        &__title {
+            text-align: center;
+        }
+        &__wrapp {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+    }
+}

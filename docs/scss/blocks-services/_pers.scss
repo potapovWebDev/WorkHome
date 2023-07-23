@@ -27,3 +27,56 @@
         max-width: 490px;
     }
 }
+
+@media (max-width: 992px) {
+    .pers {
+        &__block {
+            column-gap: 20px;
+            &_reverse {
+                .pers__img {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        &__img {
+            width: 50%;
+        }
+        &__content {
+            width: 50%;
+        }
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .pers {
+        padding-top: 100px;
+
+        &__block {
+            margin-bottom: 20px;
+            padding: 100px 20px;
+            &_reverse {
+                flex-direction: inherit;
+            }
+            &_1 {
+                background: linear-gradient(rgba(28, 20, 15, 0.7)),url("../../img/services/pers-1.jpg") top center/cover no-repeat;
+            }
+            &_2 {
+                background: linear-gradient(rgba(28, 20, 15, 0.7)),url("../../img/services/pers-3.jpg") top center/cover no-repeat;
+            }
+            &_3 {
+                background: linear-gradient(rgba(28, 20, 15, 0.7)),url("../../img/services/pers-2.jpg") top center/cover no-repeat;
+            }
+        }
+        &__img {
+            display: none;
+        }
+        &__content {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}

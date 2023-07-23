@@ -23,6 +23,20 @@ $('.services-slide__carousel').slick({
   slidesToScroll: 1,
   arrows: false,
   dots: true,
+  responsive: [
+    {
+      breakpoint: 1340,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 890,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+  ]
 });
 
 $('.services-slide__arrow_l').on('click', function (e){

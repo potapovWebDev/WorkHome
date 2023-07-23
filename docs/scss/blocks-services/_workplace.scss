@@ -72,3 +72,30 @@
         line-height: 150%;
     }
 }
+
+@media (max-width: 768px) {
+    .workplace {
+        &__box {
+            flex-direction: column;
+        }
+        &__item {
+            width: 100%;
+            &:nth-child(2) {
+                &::before,
+                &::after {
+                    width: 75%;
+                    height: 2px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 0;
+                }
+                &::after {
+                    right: auto;
+                    bottom: 0;
+                    top: auto;
+                }
+            }
+        }
+    }
+
+}

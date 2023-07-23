@@ -1,0 +1,21 @@
+.breadcrumbs {
+    color: $color-main-tx;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 15px;
+    
+    span {
+        color: $color-buttons;
+    }
+    a {
+        @include transition;
+        &:hover {
+            color: $color-buttons;
+        }
+    }
+    &_ta-l {
+        text-align: left;
+    }
+    
+    
+}
