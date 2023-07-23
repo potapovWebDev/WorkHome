@@ -1,0 +1,151 @@
+.services-slide {
+    padding: 80px 0 60px;
+    background-color: $color-bg-block;
+    &__wrapp {
+        max-width: 440px;
+        text-align: center;
+        margin: 0 auto 60px;
+    }
+    &__title {
+        margin-bottom: 20px;
+    }
+    
+    .slick-slide {
+        margin: 0 25px;
+    }
+    .slick-list {
+        margin: 0 -25px;
+    }
+    &__item {
+        min-height: 400px;
+        min-height: 200px;
+        border-radius: 10px;
+        border: 2px solid #fff;
+        color: $color-main-tx;
+        padding: 30px;
+        cursor: pointer;
+        @include transition;
+        &:hover {
+            background-color: #0F0901;
+            border-color: $color-buttons;
+            
+        }
+    }
+    &__person {
+        display: grid;
+        grid-template: auto auto/ repeat(3, auto);
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    &__avatar {
+        grid-row: 1/3;
+        border-radius: 50%
+    }
+    &__name {
+        @include font(Rubik, 500);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 170%;
+    }
+    &__sity {
+        @include font(Rubik, 400);
+        color: #4F5665;
+        font-size: 14px;
+        line-height: 200%;
+    }
+    &__rait {
+        grid-row: 1/3;
+        grid-column: 3/4;
+        display: flex;
+        justify-content: center;
+        @include font(Rubik, 400);
+        font-size: 16px;
+        line-height: 185%;
+        position: relative;
+        &::after {
+            content: '';
+            width: 16px;
+            height: 16px;
+            background: url('../../icons/services/star.svg');
+            position: absolute;
+            top: 45%;
+            right: 4px;
+            transform: translateY(-50%);
+        }
+    }
+    .slick-dots {
+        display: flex;
+        justify-content: start;
+        @include transition;
+        li {
+            width: 16px;
+            height: 16px;
+            background-color: #DDE0E4;
+            border-radius: 10px;
+            @include transition;
+            margin-right: 15px;
+            cursor: pointer;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        li.slick-active {
+            width: 36px;
+            background-color: $color-buttons;
+            @include transition;
+        }
+        li button {
+            font-size: 0;
+            padding: 0;
+        }
+
+    }
+    .slick-list {
+        margin-bottom: 80px;
+    }
+    
+    &__text {
+        font-size: 14px;
+        line-height: 185%;
+    }
+    &__arrows {
+        max-width: 140px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 0 auto;
+        transform: translateY(-30px);
+    }
+    &__arrow {
+        display: block;
+        width: 60px;
+        height: 60px;
+        border: 2px solid $color-buttons;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include transition;
+        svg path{
+            fill: $color-buttons;
+            @include transition;
+        }
+        &:hover {
+            background-color: $color-buttons;
+            svg path {
+                fill: white;
+            }
+        }
+    }
+}
+
+@media (max-width: 890px) {
+    .services-slide__buttons {
+        display: none;
+    }
+    .services-slide {
+        .slick-dots {
+            justify-content: center;
+        }
+    }
+    
+}

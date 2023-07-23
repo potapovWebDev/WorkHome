@@ -1,0 +1,86 @@
+.contacts {
+    color: $color-main-tx;
+    &__map {
+        max-width: 1060px;
+        margin: 0 auto 60px;
+    }
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100px;
+        &> div {
+            width: 100%;
+        }
+    }
+    &__social {
+        &-desc {
+            margin-bottom: 18px;
+        }
+        &-icons {
+            display: flex;
+            justify-content: start;
+        }
+        &-icon {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-bg-block;
+            margin-right: 16px;
+            &:last-child {
+                margin-right: 0;
+            }
+            svg path{
+                fill: white;
+            }
+        }
+    }
+    &__tel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 25px;
+        }
+    }
+    &__gps {
+        display: flex;
+        justify-content: end;
+        &-icon {
+            width: 29px;
+            height: 29px;
+            margin-right: 19px;
+        }
+        &-desc {
+            max-width: 310px;
+            font-size: 20px;
+            font-weight: 300;
+        }
+    }
+    .border {
+        position: relative;
+        &::before,
+        &::after {
+            content: '';
+            width: 2px;
+            height: 100px;
+            display: block;
+            background-color: #fff;
+            position: absolute;
+            /* top: 0; */
+            /* left: 0; */
+        }
+        &::before {
+            left: 0;
+        }
+        &::after {
+            right: 0;
+        }
+    }
+    
+}

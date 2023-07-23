@@ -1,0 +1,82 @@
+.tranding {
+    padding: 180px 20px 0;
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 55px;
+    }
+    &__box {
+        display: grid;
+        grid-template: auto/repeat(4, 250px);
+        justify-content: space-between;
+    }
+    &__item {
+        &-img {
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 25px;
+        }
+        &-desc {
+            @include font(Rubik, 500);
+            color: $color-main-tx;
+            font-size: 22px;
+            line-height: 185%;
+            text-align: center;
+            position: relative;
+            transform: translateX(25px);
+            &::after {
+                content: '';
+                display: block;
+                width: 25px;
+                height: 25px;
+                background: url('../../icons/home/fire.svg') center center/cover no-repeat;
+                position: absolute;
+                top: 3px;
+                left: 25px;
+            }
+        }
+        
+    }
+}
+
+@media (max-width: 1200px) {
+    .tranding {
+        padding: 100px 20px 0;
+        &__head {
+            justify-content: space-evenly;
+        }
+        &__box {
+            grid-template: auto/repeat(2, 250px);
+            justify-content: space-evenly;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .tranding {
+        &__title {
+            margin-bottom: 10px;
+        }
+        &__head {
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+        &__box {
+            grid-template: auto/250px;
+            justify-content: center;
+        }
+    
+        &__item {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .tranding {
+        &__title {
+            font-size: 19px;
+        }
+    }
+}

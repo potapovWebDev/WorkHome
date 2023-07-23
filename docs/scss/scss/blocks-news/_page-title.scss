@@ -1,0 +1,31 @@
+.page-title {
+    padding: 100px 0;
+    text-align: center;
+    &__title {
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    &__text {
+        margin-bottom: 70px;
+    }
+    &__form {
+        position: relative;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    &__input {
+        min-width: 400px;
+        padding: 10px 50px;
+        border-radius: 10px;
+        background-color: $color-bg-block;
+        color: #fff;
+        min-height: 50px;
+    }
+    &__btn {
+        
+        background-color: transparent;
+        position: absolute;
+        top: 17px;
+        left: 25px;
+    }
+}
