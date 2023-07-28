@@ -22,10 +22,15 @@
         min-height: 50px;
     }
     &__btn {
-        
         background-color: transparent;
         position: absolute;
         top: 17px;
         left: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-title__input {
+        min-width: 100%;
     }
 }

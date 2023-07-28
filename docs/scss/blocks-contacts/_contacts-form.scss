@@ -12,7 +12,7 @@
             position: absolute;
             top: 0;
             right: 0;
-
+            z-index: 1;
         }
         &::before {
             content: '';
@@ -22,7 +22,7 @@
             position: absolute;
             bottom: -52px;
             left: -78px;
-
+            z-index: 1;
         }
     }
     &__text {
@@ -31,6 +31,8 @@
     .form-group {
         max-width: 670px;
         margin: 0 auto;
+        z-index: 10;
+        position: relative;
         .form {
             display: grid;
             grid-template: repeat(4, auto)/ auto auto;
@@ -84,4 +86,30 @@
         letter-spacing: -0.3px;
     }
     
+}
+
+@media (max-width: 576px) {
+    .contacts-form {
+        &__wrapp {
+            &::after,
+            &::before {
+                display: none;
+            }
+        .form-group {
+            .form {
+                grid-template: repeat(5, auto)/ auto;
+                &__btn {
+                    grid-column: auto/auto;
+                }
+                &>div:nth-child(3) {
+                    grid-column: auto/auto;
+                }
+                &>div:nth-child(4) {
+                    grid-column: auto/auto;
+                }
+            }
+            
+        }
+        }
+    }
 }
