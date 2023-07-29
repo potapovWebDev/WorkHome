@@ -1,21 +1,38 @@
 .breadcrumbs {
     color: $color-main-tx;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     font-weight: 400;
     margin-bottom: 15px;
     list-style: none;
-    span {
+    li {
+        margin-right: 4px;
+    }
+    &_active {
         color: $color-buttons;
     }
     a {
-        @include transition;
         &:hover {
-            color: $color-buttons;
+            span {
+                color: $color-buttons;
+            }
+            
+        }
+        span {
+            @include transition;
         }
     }
     &_ta-l {
-        text-align: left;
+        justify-content: start;
     }
     
     
+}
+
+@media (max-width:992px) {
+    .breadcrumbs {
+        &_ta-l {
+            justify-content: center;
+        }
+    }
 }
